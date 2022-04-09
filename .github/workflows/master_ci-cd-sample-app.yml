@@ -4,9 +4,10 @@
 name: Build and deploy Node.js app to Azure Web App - ci-cd-sample-app
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types: [closed]
   workflow_dispatch:
 
 jobs:
